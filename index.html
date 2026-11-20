@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Juan Camilo Camacho · Portafolio</title>
+<meta name="description" content="Portafolio de Juan Camilo Camacho Jaramillo: desarrollo web, tiendas y catálogos online, y un dispensador inteligente de medicamentos.">
+<meta name="theme-color" content="#060913">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Pantalla de carga -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-in">
+    <div class="loader-logo">JC<b>/</b></div>
+    <div class="loader-bar"><i id="loaderBar"></i></div>
+    <span class="loader-pct" id="loaderPct">0%</span>
+  </div>
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="spot" id="spot"></div>
+
+<!-- Fondo con parallax -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="blob b1" data-speed=".22"></div>
+  <div class="blob b2" data-speed=".38"></div>
+  <div class="blob b3" data-speed=".14"></div>
+  <div class="grid-bg" data-speed=".08"></div>
+</div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-in wrap">
+    <a class="brand" href="#inicio">jc<b>/</b>camacho</a>
+    <nav aria-label="Secciones">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Páginas web</a>
+      <a href="#alimbox">AlimBox</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <main id="inicio">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Análisis y Desarrollo de Software</p>
+        <h1 aria-label="Juan Camilo Camacho Jaramillo">
+          <span class="w"><span style="--i:0">Juan</span></span>
+          <span class="w"><span style="--i:1">Camilo</span></span><br>
+          <span class="w"><span class="grad" style="--i:2">Camacho</span></span>
+          <span class="w"><span style="--i:3">Jaramillo</span></span>
+        </h1>
+        <p class="role reveal" data-delay="500">Soy <span id="typed" class="typed"></span><i class="caret"></i></p>
+        <p class="lead reveal" data-delay="600">Estudio desarrollo de software y construyo cosas que se usan: tiendas y catálogos web para negocios, páginas para una agencia y un dispensador físico de medicamentos con electrónica propia.</p>
+        <div class="cta reveal" data-delay="750">
+          <a class="btn primary magnetic" href="#proyectos"><span>Ver mis páginas web</span></a>
+          <a class="btn ghost magnetic" href="#contacto"><span>Contacto</span></a>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="float-layer" data-depth="26" aria-hidden="true">
+          <span class="fchip c1">&lt;/&gt;</span>
+          <span class="fchip c2">{ css }</span>
+          <span class="fchip c3">ESP32</span>
+          <span class="fchip c4">git push</span>
+        </div>
+        <aside class="ficha tilt reveal" data-delay="400" aria-label="Datos de formación">
+          <dl>
+            <div><dt>Programa</dt><dd class="big">Análisis y Desarrollo de Software</dd></div>
+            <div><dt>Ficha</dt><dd class="num">3404925</dd></div>
+            <div><dt>Proyectos</dt><dd>XIX Perfums · BRAAMOD · ALMA · AgenciaDrako · AlimBox</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <a class="scroll-hint" href="#sobre-mi" aria-label="Bajar"><span></span></a>
+    </div>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Parallax</span><span>Responsive</span><span>UX/UI</span><span>Git</span><span>GitHub</span><span>ESP32</span><span>WhatsApp</span>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Parallax</span><span>Responsive</span><span>UX/UI</span><span>Git</span><span>GitHub</span><span>ESP32</span><span>WhatsApp</span>
+      </div>
+    </div>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <div class="sec-head reveal"><h2>Sobre mí</h2><span class="tag">Quién soy</span></div>
+      <div class="about">
+        <div>
+          <p class="reveal">Me llamo <strong>Juan Camilo Camacho Jaramillo</strong> y estoy estudiando <strong>Análisis y Desarrollo de Software</strong>, ficha 3404925.</p>
+          <p class="reveal" data-delay="100">Me interesa que el software resuelva problemas reales y que además se vea bien. Por eso creo catálogos y tiendas web para negocios de perfumería y ropa, con carrito de compras y pedidos que llegan directo por WhatsApp.</p>
+          <p class="reveal" data-delay="200">No me quedo solo en la pantalla: también diseño AlimBox, un dispensador físico de medicamentos con electrónica, luces y voz, y desarrollo sitios web para una agencia.</p>
+        </div>
+        <div>
+          <div class="stats">
+            <div class="stat reveal"><b data-count="4">0</b><span>Páginas web</span></div>
+            <div class="stat reveal" data-delay="100"><b data-count="41">0</b><span>Perfumes en XIX</span></div>
+            <div class="stat reveal" data-delay="200"><b data-count="7">0</b><span>Compartimentos en AlimBox</span></div>
+            <div class="stat reveal" data-delay="300"><b data-count="1">0</b><span>Dispositivo físico</span></div>
+          </div>
+          <ul class="facts">
+            <li class="reveal"><span>Formación</span><span>Análisis y Desarrollo de Software</span></li>
+            <li class="reveal"><span>Ficha</span><span>3404925</span></li>
+            <li class="reveal"><span>Enfoque</span><span>Web, UX/UI y hardware</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINAS WEB -->
+    <section id="proyectos">
+      <div class="sec-head reveal"><h2>Páginas web</h2><span class="tag">Lo que he construido</span></div>
+
+      <!-- XIX Perfums -->
+      <article class="work" style="--a:#d9b34a">
+        <div class="shot reveal">
+          <div class="browser tilt">
+            <div class="bar"><i></i><i></i><i></i><span>xixperfums</span></div>
+            <div class="screen scr-xix">
+              <div class="glow" data-speed=".2"></div>
+              <div class="xl" data-speed=".07">XIX<small>PERFUMS</small><em>Pedir por WhatsApp</em></div>
+              <div class="bottles" data-speed="-.12"><b></b><b></b><b></b><b></b><b></b></div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status reveal">Tienda online</span>
+          <h3 class="reveal" data-delay="80">XIX Perfums</h3>
+          <p class="kind reveal" data-delay="120">Tienda de perfumería · HTML, CSS y JavaScript</p>
+          <p class="reveal" data-delay="160">Página para una marca de perfumes con logo dorado sobre fondo negro. Catálogo de 41 perfumes de 50 ml separados por secciones de hombre y mujer, con descripción de cada uno y pantalla de carga con el logo.</p>
+          <ul class="points">
+            <li class="reveal">Carrito: agregar, quitar y total</li>
+            <li class="reveal" data-delay="60">Pedido automático por WhatsApp</li>
+            <li class="reveal" data-delay="120">Secciones hombre y mujer</li>
+            <li class="reveal" data-delay="180">Efectos y animaciones</li>
+          </ul>
+          <div class="chips reveal"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">WhatsApp</span></div>
+          <p class="links-row reveal"><a href="https://www.instagram.com/perfums_19" target="_blank" rel="noopener">Instagram de la marca</a></p>
+        </div>
+      </article>
+
+      <!-- BRAAMOD -->
+      <article class="work" style="--a:#c084fc">
+        <div class="shot reveal">
+          <div class="browser tilt">
+            <div class="bar"><i></i><i></i><i></i><span>braamod</span></div>
+            <div class="screen scr-bra">
+              <div class="glow" data-speed=".18"></div>
+              <div class="search" data-speed=".05"><span></span><em>Buscar perfume…</em></div>
+              <div class="cats" data-speed=".08"><b>Mujer</b><b>Hombre</b><b>Árabes</b><b>Unisex</b></div>
+              <div class="spin-stage" data-speed="-.1"><div class="spin"></div></div>
+              <div class="cards" data-speed="-.04"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status reveal">Tienda online</span>
+          <h3 class="reveal" data-delay="80">BRAAMOD</h3>
+          <p class="kind reveal" data-delay="120">Catálogo y tienda de perfumes · HTML, CSS y JavaScript</p>
+          <p class="reveal" data-delay="160">Catálogo de perfumería con categorías de mujer, hombre, árabes, unisex y económicos. El cliente encuentra lo que busca rápido y arma su pedido sin salir de la página.</p>
+          <ul class="points">
+            <li class="reveal">Buscador y filtros por categoría</li>
+            <li class="reveal" data-delay="60">Ventana de detalle por perfume</li>
+            <li class="reveal" data-delay="120">Carrito de compras</li>
+            <li class="reveal" data-delay="180">Parallax con perfume que gira al hacer scroll</li>
+          </ul>
+          <div class="chips reveal"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">UX/UI</span><span class="chip">Parallax</span></div>
+        </div>
+      </article>
+
+      <!-- ALMA -->
+      <article class="work" style="--a:#ff8a3d">
+        <div class="shot reveal">
+          <div class="browser tilt">
+            <div class="bar"><i></i><i></i><i></i><span>alma-halloween</span></div>
+            <div class="screen scr-alma">
+              <div class="moon" data-speed=".25"></div>
+              <div class="stars" data-speed=".1"></div>
+              <div class="shirt-wrap" data-speed="-.08"><div class="shirt"><span>ALMA</span></div></div>
+              <div class="tagline" data-speed=".04">Catálogo Halloween</div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status reveal">Catálogo web</span>
+          <h3 class="reveal" data-delay="80">ALMA Catálogo Halloween</h3>
+          <p class="kind reveal" data-delay="120">Catálogo de camisetas · HTML, CSS y JavaScript</p>
+          <p class="reveal" data-delay="160">Catálogo de ropa con temática de Halloween para una marca, hecho a partir de las imágenes de la marca: camisetas, etiqueta ALMA y guía de tallas. Pensado para verse llamativo y profesional.</p>
+          <ul class="points">
+            <li class="reveal">Diseño temático y llamativo</li>
+            <li class="reveal" data-delay="60">Guía de tallas integrada</li>
+            <li class="reveal" data-delay="120">Se amplía con nuevas categorías</li>
+            <li class="reveal" data-delay="180">Adaptado a celular y computador</li>
+          </ul>
+          <div class="chips reveal"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Responsive</span></div>
+        </div>
+      </article>
+
+      <!-- AgenciaDrako -->
+      <article class="work" style="--a:#34d1c9">
+        <div class="shot reveal">
+          <div class="browser tilt">
+            <div class="bar"><i></i><i></i><i></i><span>agenciadrako</span></div>
+            <div class="screen scr-drako">
+              <div class="glow" data-speed=".2"></div>
+              <div class="code" data-speed="-.08">
+                <i style="--w:46%;--c:#8b7bff"></i><i style="--w:72%;--c:#34d1c9"></i><i style="--w:58%;--c:#e8eef8"></i>
+                <i style="--w:34%;--c:#ff7ab8"></i><i style="--w:66%;--c:#34d1c9"></i><i style="--w:50%;--c:#8b7bff"></i>
+              </div>
+              <div class="branch" data-speed=".06"><b></b>main</div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <span class="status reveal">Proyecto web</span>
+          <h3 class="reveal" data-delay="80">AgenciaDrako</h3>
+          <p class="kind reveal" data-delay="120">Sitio web · Git y GitHub</p>
+          <p class="reveal" data-delay="160">Página web de la agencia AgenciaDrako. El proyecto vive en un repositorio de GitHub y lo gestiono con Git, desde mi carpeta local hasta la rama principal del repositorio.</p>
+          <div class="chips reveal"><span class="chip">Desarrollo web</span><span class="chip">Git</span><span class="chip">GitHub</span></div>
+          <p class="links-row reveal"><a href="https://github.com/agenciadrako77/AgenciaDrako" target="_blank" rel="noopener">Ver el repositorio en GitHub</a></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- BANDA PARALLAX -->
+    <div class="band" aria-hidden="true">
+      <div class="band-row" data-hspeed="-.18">Diseño · Código · Hardware · Diseño · Código · Hardware</div>
+      <div class="band-row outline" data-hspeed=".18">Web · Tiendas · Catálogos · Web · Tiendas · Catálogos</div>
+    </div>
+
+    <!-- ALIMBOX -->
+    <section id="alimbox">
+      <div class="sec-head reveal"><h2>AlimBox</h2><span class="tag">Hardware y electrónica</span></div>
+      <article class="alim">
+        <div class="alim-text">
+          <span class="status reveal">En diseño</span>
+          <p class="kind reveal">Dispositivo físico · Electrónica</p>
+          <p class="reveal">Dispensador portátil de medicamentos que se conecta con una app móvil. Recibe el nombre de la persona, la dosis y la alarma. A la hora indicada suena, dice en voz alta el nombre de la persona y de la pastilla, y enciende solo el compartimento que debe abrir.</p>
+          <p class="reveal">Si la persona toma la dosis se registra como tomada. Si no, AlimBox avisa a la app para que el cuidador lo sepa.</p>
+          <ul class="points">
+            <li class="reveal">7 compartimentos fijos e independientes</li>
+            <li class="reveal" data-delay="60">Sensor por compartimento que detecta la apertura</li>
+            <li class="reveal" data-delay="120">Pantalla OLED I2C de 0.96" (SSD1306)</li>
+            <li class="reveal" data-delay="180">Conexión con la app por Bluetooth y WiFi</li>
+            <li class="reveal" data-delay="240">Voz, luz y alarma por compartimento</li>
+            <li class="reveal" data-delay="300">Compacto, portátil y con batería recargable</li>
+          </ul>
+        </div>
+        <figure class="box reveal tilt">
+          <svg viewBox="0 0 640 200" role="img" aria-label="Esquema de AlimBox con siete compartimentos, uno iluminado que va cambiando, y una pantalla OLED">
+            <rect class="s-body" x="8" y="8" width="624" height="184" rx="16"/>
+            <rect class="s-oled" x="24" y="24" width="592" height="46" rx="6"/>
+            <text class="s-oled-t" x="40" y="43" id="oledA">08:00  ·  Hora de su dosis</text>
+            <text class="s-oled-t" x="40" y="60" id="oledB">Compartimento 3</text>
+            <g id="cells"></g>
+          </svg>
+          <figcaption>Esquema animado de AlimBox: siete compartimentos fijos, uno iluminado a la hora de la dosis, y pantalla OLED con la hora y mensajes.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+      <div class="sec-head reveal"><h2>Habilidades</h2><span class="tag">Con qué trabajo</span></div>
+      <div class="skills">
+        <div class="skill reveal glow-card">
+          <h3>Desarrollo web</h3>
+          <ul><li>HTML5 y CSS3</li><li>JavaScript</li><li>Animaciones y efecto parallax</li><li>Diseño responsive</li></ul>
+        </div>
+        <div class="skill reveal glow-card" data-delay="120">
+          <h3>Tiendas y catálogos</h3>
+          <ul><li>Carrito de compras</li><li>Pedidos por WhatsApp</li><li>Buscador y filtros</li><li>Revisión UX/UI</li></ul>
+        </div>
+        <div class="skill reveal glow-card" data-delay="240">
+          <h3>Herramientas y hardware</h3>
+          <ul><li>Git y GitHub</li><li>ESP32 y sensores</li><li>Pantallas OLED y LEDs</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+      <div class="sec-head reveal"><h2>Contacto</h2><span class="tag">Hablemos</span></div>
+      <p class="lead reveal">Si quieres conocer más de mis proyectos o trabajar conmigo, el mejor punto de partida es mi repositorio en GitHub.</p>
+      <div class="links reveal">
+        <div><span>Nombre</span><span>Juan Camilo Camacho Jaramillo</span></div>
+        <div><span>Formación</span><span>Análisis y Desarrollo de Software · Ficha 3404925</span></div>
+        <div><span>GitHub</span><a href="https://github.com/agenciadrako77/AgenciaDrako" target="_blank" rel="noopener">agenciadrako77/AgenciaDrako</a></div>
+      </div>
+      <a class="btn primary big magnetic reveal" href="https://github.com/agenciadrako77/AgenciaDrako" target="_blank" rel="noopener"><span>Ir a mi GitHub →</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <span>Juan Camilo Camacho Jaramillo</span>
+    <span>Portafolio · <span id="year">2026</span></span>
+  </footer>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
